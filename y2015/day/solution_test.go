@@ -19,7 +19,7 @@ func TestPart1(t *testing.T) {
 	}
 	for name, tt := range tests {
 		t.Run(name, func(t *testing.T) {
-			d := dayx{}
+			d := day{}
 			in := cmd.Input{SI: tt.input}
 
 			res := d.Part1(in)
@@ -41,7 +41,7 @@ func TestPart2(t *testing.T) {
 	}
 	for name, tt := range tests {
 		t.Run(name, func(t *testing.T) {
-			d := dayx{}
+			d := day{}
 			in := cmd.Input{SI: tt.input}
 
 			res := d.Part2(in)

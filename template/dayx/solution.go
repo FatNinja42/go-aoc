@@ -1,9 +1,10 @@
 package main
 
 import (
+	"fmt"
+
 	"aoc/cmd"
 	"aoc/utils"
-	"fmt"
 )
 
 type dayx struct{}
