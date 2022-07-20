@@ -1,2 +1,0 @@
-turn on 0,1 through 9,9
-toggle 0,0 through 3,0
