@@ -9,17 +9,20 @@ import (
 
 type dayx struct{}
 
-// Template.
+func newDay() *dayx {
+	return &dayx{}
+}
+
 func main() {
 	doDay()
 }
 
 func doDay() {
-	day := dayx{}
-	instr := utils.ReadFileAsString("/y2015/dayx/input.txt")
+	day := newDay()
+	instr := utils.ReadFileAsStringSlice("/y2022/dayx/input.txt")
 
 	input := cmd.Input{
-		SI: instr,
+		SLI: instr,
 	}
 
 	fmt.Printf("P1: %d", day.Part1(input))
@@ -27,10 +30,10 @@ func doDay() {
 	fmt.Printf("P2: %d", day.Part2(input))
 }
 
-func (d dayx) Part1(input cmd.Input) interface{} {
+func (d *dayx) Part1(input cmd.Input) interface{} {
 	return ""
 }
 
-func (d dayx) Part2(input cmd.Input) interface{} {
+func (d *dayx) Part2(input cmd.Input) interface{} {
 	return ""
 }

@@ -30,13 +30,6 @@ func ReadFileAsStringSlice(filePath string) []string {
 		panic(err)
 	}
 
-	defer func(file *os.File) {
-		err := file.Close()
-		if err != nil {
-			panic(err)
-		}
-	}(file)
-
 	var lines []string
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
